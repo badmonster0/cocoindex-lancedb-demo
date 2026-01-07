@@ -72,6 +72,16 @@ this project. Run the following command to install the required Python libraries
 uv sync
 ```
 
+## Tools used
+
+The `nomic-embed-text` embedding model from [Ollama](https://ollama.com/library/nomic-embed-text) is used for text embeddings. For image embeddings, the [CLIP](https://huggingface.co/docs/transformers/en/model_doc/clip) model from Hugging Face is used.
+
+In addition to embedding, we'll be enriching the dataset with features (e.g., detecting allergens in recipes and storing them as new boolean columns). LLMs are used to make inferences on the recipe ingredients for this task. We'll be using [DSPy](https://dspy.ai/), a declarative framework for _programming, not prompting_ LLMs for this stage.
+
+The following diagram shows where each tool sits in the overall workflow. CocoIndex provides a [built-in target for LanceDB](https://cocoindex.io/docs/targets/lancedb), and this is used to manage the data pipeline and persist the multimodal data in a LanceDB table.
+
+![](./assets/lancedb-cocoindex-1.png)
+
 ## Generate data
 
 To simulate a scenario where we have data intermittently coming in from a source, we'll use the
