@@ -1,6 +1,6 @@
 # Keeping your data in LanceDB fresh with CocoIndex
 
-![](./assets/coco-lance.jpg)
+![](./assets/coco-lance.png)
 
 ## Background
 
