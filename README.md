@@ -34,7 +34,7 @@ them all here.
 
 ### Why do incremental processing via CocoIndex?
 
-In production environments, data are subject to change. Enterprises sit on massive, dynamic datasets — documents, codebases, meeting notes API. Most data infrastructures are batch-oriented and blind to change, forcing engineers to rebuild from scratch every time data or logic shifts.  As AI systems evolve from simple chat-based interactions to complex, autonomous agents, one fundamental challenge remains unsolved: keeping their context accurate and up to date in a world that never stops changing. 
+In production environments, data are subject to change. Enterprises sit on massive, dynamic datasets — documents, codebases, meetings, etc. Most data infrastructures are batch-oriented and blind to change, forcing engineers to rebuild from scratch every time data or logic shifts.  As AI systems evolve from simple chat-based interactions to complex, autonomous agents, one fundamental challenge remains unsolved: keeping their context accurate and up to date in a world that never stops changing. 
 
 Consider this scenario: You have a user-facing application where users enter their recipes (along with images of the food/drink item that they prepared), and you want to persist the data to a multimodal storage engine. Users edit the data over time, your requirement for building the system shifts over time, e.g., new columns get added. 
 
